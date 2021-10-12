@@ -8,7 +8,7 @@ class Updates {
 	private $plugin_slug;
 	private $extra_data;
 
-	public function __construct( $plugin_file, $plugin_slug, $extra_data ) {
+	public function __construct( string $plugin_file, string $plugin_slug, array $extra_data = []) {
 		$this->plugin_file = $plugin_file;
 		$this->plugin_slug = $plugin_slug;
 		$this->extra_data  = $extra_data;
