@@ -1,0 +1,20 @@
+{
+  "name": "wpify/updates",
+  "type": "library",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "vasikgreif",
+      "email": "info@vaclavgreif.cz"
+    }
+  ],
+  "require": {
+    "yahnis-elsts/plugin-update-checker": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Wpify\\Updates\\": "src/"
+    }
+  }
+}
