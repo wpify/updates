@@ -44,11 +44,39 @@ class Updates {
 	}
 
 	private function load_textdomain(): void {
-		$mo_file = dirname( __DIR__ ) . '/languages/wpify-updates-' . determine_locale() . '.mo';
+		$mo_file = self::find_translation( dirname( __DIR__ ) . '/languages', 'wpify-updates-', '.mo', determine_locale() );
 
-		if ( file_exists( $mo_file ) ) {
+		if ( $mo_file ) {
 			load_textdomain( 'wpify-updates', $mo_file );
 		}
+	}
+
+	/**
+	 * Translation file for the locale, or for another locale of the same language when there is none
+	 * (de_AT, de_CH and de_DE_formal use de_DE; the {language}_{LANGUAGE} variant is preferred).
+	 *
+	 * @param string $dir    Directory with the translations.
+	 * @param string $prefix File name before the locale, e.g. 'wpify-updates-'.
+	 * @param string $suffix File name after the locale, e.g. '.mo'.
+	 * @param string $locale Locale.
+	 *
+	 * @return string Empty when no translation exists.
+	 */
+	private static function find_translation( string $dir, string $prefix, string $suffix, string $locale ): string {
+		$file = $dir . '/' . $prefix . $locale . $suffix;
+		if ( file_exists( $file ) ) {
+			return $file;
+		}
+
+		$language  = strtolower( strtok( $locale, '_' ) );
+		$preferred = $dir . '/' . $prefix . $language . '_' . strtoupper( $language ) . $suffix;
+		if ( file_exists( $preferred ) ) {
+			return $preferred;
+		}
+
+		$files = glob( $dir . '/' . $prefix . $language . '_*' . $suffix );
+
+		return $files ? $files[0] : '';
 	}
 
 	public function retain_fields( $fields ) {

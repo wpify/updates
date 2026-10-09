@@ -2,6 +2,12 @@
 
 All notable changes to this package are documented here.
 
+## [1.2.0]
+
+### Added
+- Polish, German, Hungarian and Romanian translations (alongside Czech and Slovak).
+- A locale without its own translation uses another locale of the same language, e.g. de_AT, de_CH and de_DE_formal use the German one.
+
 ## [1.1.0]
 
 ### Added

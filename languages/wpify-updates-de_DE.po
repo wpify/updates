@@ -1,44 +1,45 @@
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-09T13:45:21+02:00\n"
-"PO-Revision-Date: 2026-10-05T23:23:11+02:00\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: sk\n"
+"PO-Revision-Date: 2026-10-09 12:00+0200\n"
+"Last-Translator: WPify\n"
+"Language-Team: de (draft, needs native review)\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: WP-CLI 2.11.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Domain: wpify-updates\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: WP-CLI 2.11.0\n"
 
 #. translators: %s: domain the license is activated for
 #: src/Updates.php:137
 msgid "The license is activated for the domain %s, not for this site."
-msgstr "Licencia je aktivovaná pre doménu %s, nie pre tento web."
+msgstr "Die Lizenz ist für die Domain %s aktiviert, nicht für diese Website."
 
 #: src/Updates.php:138
 msgid "The license is activated for a different domain."
-msgstr "Licencia je aktivovaná pre inú doménu."
+msgstr "Die Lizenz ist für eine andere Domain aktiviert."
 
 #: src/Updates.php:140
 msgid "The license activation was not found. It may have been deactivated in your WPify account."
-msgstr "Aktivácia licencie sa nenašla. Mohla byť deaktivovaná vo vašom účte WPify."
+msgstr "Die Lizenzaktivierung wurde nicht gefunden. Möglicherweise wurde sie in Ihrem WPify-Konto deaktiviert."
 
 #: src/Updates.php:143
 msgid "The subscription is on hold, waiting for payment."
-msgstr "Predplatné je pozastavené, čaká na platbu."
+msgstr "Das Abonnement ist pausiert und wartet auf die Zahlung."
 
 #: src/Updates.php:144
 msgid "The subscription is not active."
-msgstr "Predplatné nie je aktívne."
+msgstr "Das Abonnement ist nicht aktiv."
 
 #: src/Updates.php:146
 msgid "No active subscription was found for this license."
-msgstr "K tejto licencii sa nenašlo aktívne predplatné."
+msgstr "Für diese Lizenz wurde kein aktives Abonnement gefunden."
 
 #: src/Updates.php:148
 msgid "The license key is not valid."
-msgstr "Licenčný kľúč nie je platný."
+msgstr "Der Lizenzschlüssel ist nicht gültig."
