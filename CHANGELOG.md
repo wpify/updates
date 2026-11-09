@@ -2,6 +2,12 @@
 
 All notable changes to this package are documented here.
 
+## [1.3.0]
+
+### Changed
+- Requires the stable plugin-update-checker 6 (`^6.0`) instead of its development branch, so a new upstream major version can no longer break the build. Version 6 also keeps the reason for an unavailable update when it saves the update state.
+- Requires PHP 7.4 or newer (required by plugin-update-checker 6).
+
 ## [1.2.0]
 
 ### Added

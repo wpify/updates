@@ -2,7 +2,7 @@
 
 namespace Wpify\Updates;
 
-use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+use YahnisElsts\PluginUpdateChecker\v6\PucFactory;
 
 class Updates {
 
